@@ -1,70 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Forms</title>
-    </head>
-</html>
+
+<head>
+  <title>Forms</title>
+</head>
+
 <body>
-    <fieldset>
-        <legend>
-            <h4>Pizza Order</h4>
-        </legend>
-        <form action="" method="get" target="_blank">
-            <label for="name"></label>
-            <input required type="text"  id="name" name="username" 
-                   placeholder="Your name"
-                   minlength="3"
-                   maxlength="10"><br>
-            <br>
-            <label for="email"></label>
-            <input required type="email" id="email" name="email" placeholder="Your email"><br>
-            <br>
-            Topping:
-            <input type="radio" id="supreme" name="topping"> 
-            <label for="supreme">Supreme</label>
-            <input type="radio" id="vegetarian" name="topping"> 
-            <label for="vegetarian">Vegetarian</label>
-            <input type="radio" id="hawaian" name="topping"> 
-            <label for="hawaian">Hawaian</label>
-            <br />
-            <br />
-            <label for="quantity">Quantity (between 1 and 7):</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="7" value="1">
-            <br />
-            <br />
-            Sauce:
-            <select id="sauce">
-                <option value="bbq">BBQ</option>
-                <option value="tomato" selected>Tomato</option>
-                <option value="cheese">Cheese</option>
-                <option value="garlic">Garlic</option>
-                <option value="spicy">Spicy</option>
-            </select>
-            <br />
-            <br />
-            Extras:
-            <input type="checkbox" id="cheese" name="extras"> 
-            <label for="cheese">Cheese</label>
-            <input type="checkbox" id="onion" name="extras"> 
-            <label for="onion">Onion</label>
-            <input type="checkbox" id="olives" name="extras"> 
-            <label for="olives">Olives</label>
-            <br /> 
-            <br /> 
-            <label for="date">Delivery date:</label>
-            <input type="date" id="date" name="delivery-date" min="2023-06-05" max="2023-06-10"/>
-            <br />
-            <br />
-            <label for="instructions">Delivery instructions:</label>
-            <br /> 
-            <br /> 
-            <textarea required placeholder="Your comment here..." id="instructions" name="instructions"  rows="4" cols="50"></textarea>
-            <br />
-            <button type="submit" value="Submit">Send order</button>
-            <button type="reset" value="Reset">Reset</button>
-        </form>
-     
-     </fieldset>
-  
-    </section>
+  <fieldset>
+    <legend>
+      <h4>Pizza Order</h4>
+    </legend>
+    <form action="" method="get" target="_blank">
+      <label for="name"></label>
+      <input required type="text" id="name" name="username" placeholder="Your name" minlength="3" maxlength="10"><br>
+      <br>
+      <label for="email"></label>
+      <input required type="email" id="email" name="email" placeholder="Your email">
+      <br />
+      <br />
+      <span>Topping:
+        <input type="radio" id="supreme" name="topping">
+        <label for="supreme">Supreme</label>
+        <input type="radio" id="vegetarian" name="topping">
+        <label for="vegetarian">Vegetarian</label>
+        <input type="radio" id="hawaian" name="topping">
+        <label for="hawaian">Hawaian</label>
+      </span>
+      <br />
+      <br />
+      <label for="quantity">Quantity (between 1 and 7):</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="7" value="1">
+      <br />
+      <br />
+      <span>Sauce:
+        <select id="sauce">
+          <option value="bbq">BBQ</option>
+          <option value="tomato" selected>Tomato</option>
+          <option value="cheese">Cheese</option>
+          <option value="garlic">Garlic</option>
+          <option value="spicy">Spicy</option>
+        </select>
+      </span>
+      <br />
+      <br />
+      <span>Extras:
+        <input type="checkbox" id="cheese" name="extras">
+        <label for="cheese">Cheese</label>
+        <input type="checkbox" id="onion" name="extras">
+        <label for="onion">Onion</label>
+        <input type="checkbox" id="olives" name="extras">
+        <label for="olives">Olives</label>
+      </span>
+      <br />
+      <br />
+      <label for="date">Delivery date:</label>
+      <input type="date" id="date" name="delivery-date" min="2023-06-05" max="2023-06-10" />
+      <br />
+      <br />
+      <label for="instructions">Delivery instructions:</label>
+      <br />
+      <br />
+      <textarea required placeholder="Your comment here..." id="instructions" name="instructions" rows="4"
+        cols="50"></textarea>
+      <br />
+      <button type="submit" value="Submit">Send order</button>
+      <button type="reset" value="Reset">Reset</button>
+    </form>
+  </fieldset>
 </body>
+
+</html>
