@@ -1,21 +1,33 @@
-.first{
-    height: 600px;
-    width: 600px;
-    place-items: center;
+
+#first {
     background-color: lightgrey;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 500px;
+    height: 500px;
+  }  
+#yellow, #blue, #green{
+        width: 200px;
+        height: 200px;
 }
-.yellow{
-    height: 50px;
-    width: 50px;
-    background-color: yellow;
+#yellow{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background-color: yellow
 }
-.blue{
-    height: 50px;
-    width: 50px;
-    background-color: blue;
+#blue{
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    background-color: blue
 }
-.green{
-    height: 50px;
-    width: 50px;
-    background-color: green;
+#green{
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    background-color: green
 }
