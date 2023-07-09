@@ -3,10 +3,10 @@
     border: 1px solid rgb(131, 132, 133);
     position: absolute;
     top: 50%;
-    right: 30%;
+    left: 70%;
     transform: translate(-50%, -50%);
     width: 400px;
-    height: 800px;
+    height: 700px;
     background-color: #E6E6E6;
     font-family: arial,sans-serif;
     display: grid;
@@ -46,6 +46,8 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns:repeat(6, 1fr);
+    justify-content: center;
+    margin: 10px;
 }
 .text1 {
     grid-row: 1/2;
@@ -62,6 +64,7 @@
     row-gap: 5px;
     column-gap: 5px;
     justify-content: center;
+    box-sizing: border-box;
 }
 .button1 {
     grid-row: 1/2;
@@ -70,4 +73,7 @@
 .button2 {
     grid-row: 1/2;
     grid-column: 3/span 3;
+}
+.button-s:hover, .button1:hover, .buttoni:hover {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
