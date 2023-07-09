@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #2D5971;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    gap: 60px;
+    header {
+        font-size: 50px;
+        text-transform: capitalize;
+        animation: slideDown ease 2s forwards .5s infinite;
+    }
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+        animation: slide 2s forwards infinite;
+    }
+    .read {
+        color: white;
+        border: 1px solid white;
+        align-self: center;
+        width: 90px;
+        height: 40px;
+    }
+   
+}
+@keyframes slideDown {
+    0% {transform: translateY(-150px);}
+    100% {transform: translateY(0);opacity:1;}
+}
+@keyframes slide {
+    from {
+        margin-left: 100%;
+        width: 300%
+      }
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+}
