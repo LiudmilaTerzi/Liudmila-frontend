@@ -14,35 +14,50 @@
     color: white;
     gap: 60px;
     header {
+        width: 50%;
+        align-self: center;
         font-size: 50px;
         text-transform: capitalize;
-        animation: slideDown ease 2s forwards .5s infinite;
+        animation: slideDown ease 4s forwards 1s infinite;
     }
     main {
-        margin-left: 10%;
-        margin-right: 10%;
-        animation: slide 2s forwards infinite;
+        width: 50%;
+        font-size: 20px;
+        align-self: center;
+        animation: slide ease 4s forwards 1s infinite;
     }
     .read {
         color: white;
-        border: 1px solid white;
+        border: 2px solid white;
+        font-size: 20px;
         align-self: center;
-        width: 90px;
-        height: 40px;
+        width: 150px;
+        height: 60px;
+        animation: pop ease-in 4s forwards 1s infinite;
+        
     }
    
 }
 @keyframes slideDown {
-    0% {transform: translateY(-150px);}
-    100% {transform: translateY(0);opacity:1;}
+    from {transform: translateY(-150px); opacity: 0;}
+    to {transform: translateY(0);opacity:1;}
 }
 @keyframes slide {
-    from {
-        margin-left: 100%;
-        width: 300%
-      }
-      to {
-        margin-left: 0%;
-        width: 100%;
-      }
+    0%{
+        transform: translateX(-100%)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+@keyframes pop {
+    0% { 
+        opacity: 0;
+    }
+    70% {
+       opacity: 0;
+     }
+    100% { 
+        opacity: 1;
+    }
 }
